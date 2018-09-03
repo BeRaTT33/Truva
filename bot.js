@@ -360,7 +360,7 @@ if (message.content.toLowerCase() === prefix + "ördek") {
 client.on("guildMemberAdd", async member => {
     let sayac = JSON.parse(fs.readFileSync("./ayarlar/sayac.json", "utf8"));
     const channel = member.guild.channels.find("name", "sayaç")
-    channel.send(`**${member.user.tag}** Katırldı 😎 ${sayac[member.guild.id].sayi} olmamıza son ${sayac[member.guild.id].sayi - member.guild.members.size} üye kaldı!`)
+    channel.send(`**${member.user.tag}** Katırdı 😎 ${sayac[member.guild.id].sayi} olmamıza son ${sayac[member.guild.id].sayi - member.guild.members.size} üye kaldı!`)
 })
 
 client.on("guildMemberRemove", async member => {
