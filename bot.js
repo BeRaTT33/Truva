@@ -244,7 +244,7 @@ client.on("message", message => {
     
     if (message.content.toLowerCase() === prefix + "botbilgi") {
         const embed = new Discord.RichEmbed()
-            .addField("Bot Sahibi", `<@373904597703589888>`, true)
+            .addField("Bot Sahibi", `<@373904597703589888><@373827236299538443>`, true)
             .addField("Version", "2", true)
             .addField("Toplam Sunucu Sayısı", client.guilds.size, true)
             .addField("Toplam Kullanıcı Sayısı", client.users.size, true)
