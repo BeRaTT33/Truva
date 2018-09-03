@@ -293,7 +293,8 @@ request('https://www.doviz.com/api/v1/currencies/EUR/latest', function (error, r
 client.on("message", message => {
     if (message.content.toLowerCase() === prefix + "yardım") {
         const embed = new Discord.RichEmbed()
-.addField("Tüm Komutlar",`!!anakomutlar = Botun Anakomutlarını Gösterir \n!!yetkili = Yetkili Kommutlarını Gösterir \n!!eğlence = Bot un Eğlence Komutlarını Gösterir \n @`)
+.addField("Tüm Komutlar",`!!anakomutlar = Botun Anakomutlarını Gösterir \n!!yetkili = Yetkili Kommutlarını Gösterir \n!!eğlence = Bot un Eğlence Komutlarını Gösterir \n`)
+.setDescription(`**${message.author.username}** Komutlarımı İstedi !!davet sunucunuza botu almak icin`)	
             .setColor("RANDOM")
         return message.channel.sendEmbed(embed)
     }
